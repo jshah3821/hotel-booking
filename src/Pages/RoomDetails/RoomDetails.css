@@ -12,6 +12,11 @@
 .room_s2_div1 {
   width: 50vw;
 }
+.room_s2_div1_img {
+  height: 70vh;
+  width: 50vw;
+  overflow: hidden;
+}
 .rooms_txt_container {
   width: 50vw;
   display: flex;
@@ -51,6 +56,10 @@ td {
     align-items: center;
   }
   .room_s2_div1 {
+    width: 90vw;
+  }
+  .room_s2_div1_img {
+    height: 50vh;
     width: 90vw;
   }
   .rooms_txt_container p {

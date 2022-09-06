@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ImgWithLoader from "../../components/ImgWithLoader";
 import PageTitle from "../../components/PageTitle";
+import { img10, img3, img5, img7, img9 } from "../../Utils/Utils";
 import "./About.css";
 import AboutUsVideo from "./AboutUsVideo";
 import ImageWithText from "./ImageWithText";
@@ -34,19 +35,19 @@ const About = () => {
           text={"Restaurants Services"}
           no={1}
           width="360"
-          height="420"
+          height="520"
         />
         <ImageWithText
           text={"Travel & Camping"}
           no={2}
           width="360"
-          height="420"
+          height="520"
         />
-        <ImageWithText text={"Event & Party"} no={3} width="360" height="420" />
+        <ImageWithText text={"Event & Party"} no={3} width="360" height="520" />
       </div>
       <div className="about_s3">
         <div className="video_img_container">
-          <ImgWithLoader width="1440" height="500" />
+          <ImgWithLoader src={img3} />
         </div>
         <div className="video_text">
           <h1>Discover Our Hotel & Services.</h1>
@@ -70,22 +71,22 @@ const About = () => {
         <div className="about_s4_i123">
           <div className="img1_container">
             <div className="img1">Room Luxury</div>
-            <ImgWithLoader src="./Images/istockphoto-1066999762-612x612.jpeg" />
+            <ImgWithLoader src={img10} />
           </div>
           <div className="about_s4_i23">
             <div className="img2_container">
               <div className="img2">Room Luxury</div>
-              <ImgWithLoader src="./Images/istockphoto-627892060-612x612.jpeg" />
+              <ImgWithLoader src={img9} />
             </div>
             <div className="img3_container">
               <div className="img3">Room Luxury</div>
-              <ImgWithLoader src="./Images/hotel-room-beautiful-orange-sofa-included-43642330.jpeg" />
+              <ImgWithLoader src={img7} />
             </div>
           </div>
         </div>
         <div className="img4_container">
           <div className="img4">Room Luxury</div>
-          <ImgWithLoader src="./Images/1407953244000-177513283.jpeg" />
+          <ImgWithLoader src={img5} />
         </div>
       </div>
     </>

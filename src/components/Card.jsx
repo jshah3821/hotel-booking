@@ -27,7 +27,12 @@ const Card = (props) => {
             </div>
           )}
           {error && <p>something went wrong</p>}
-          <img src={imgSrc} onLoad={imgLoaded} onError={imgError} />
+          <img
+            src={imgSrc}
+            height="270px"
+            onLoad={imgLoaded}
+            onError={imgError}
+          />
         </div>
         <div className="card_details">
           <h1 style={{ color: "black" }}>{category}</h1>

@@ -18,6 +18,9 @@
   .contact {
     flex-wrap: wrap;
   }
+  .contact_s1 {
+    width: 90vw;
+  }
   .add_review_form {
     width: 90vw;
   }

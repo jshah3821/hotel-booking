@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       <div className="contact">
-        <div>
+        <div className="contact_s1">
           <h1 className="mb-3">Contact Info</h1>
           <p className="text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing

@@ -6,11 +6,12 @@ import ImgWithLoader from "../../components/ImgWithLoader";
 import Modal from "../../components/Modal";
 import PageTitle from "../../components/PageTitle";
 import Review from "../../components/Review";
+import { img1, img4 } from "../../Utils/Utils";
 import "./RoomDetails.css";
 
 const RoomDetails = () => {
   const [roomData, setRoomData] = useState({
-    imgSrc: "https://picsum.photos/740/270?random=1",
+    imgSrc: img4,
     category: "Premium Room",
     price: 199,
     capacity: 3,
@@ -19,6 +20,7 @@ const RoomDetails = () => {
   useEffect(() => {
     if (getData.state !== null) {
       setRoomData(getData.state);
+      console.log(getData.state);
     }
   }, [getData.state]);
   return (
@@ -26,7 +28,9 @@ const RoomDetails = () => {
       <PageTitle title={"Our Rooms"} page={"Rooms"} />
       <div className="rooms_s2 px-5">
         <div className="room_s2_div1">
-          <ImgWithLoader src={roomData.imgSrc} />
+          <div className="room_s2_div1_img">
+            <ImgWithLoader src={roomData.imgSrc} />
+          </div>
           <div className="rooms_txt_container mt-3">
             <div className="rd mb-2">
               <h1 style={{ color: "black" }}>{roomData.category}</h1>

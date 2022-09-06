@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CircularProgress } from "@material-ui/core";
+import { img7 } from "../Utils/Utils";
 
 const ImgWithLoader = (props) => {
   const { height, width, src } = props;
@@ -23,11 +24,7 @@ const ImgWithLoader = (props) => {
         </div>
       )}
       {error && <p>something went wrong</p>}
-      <img
-        src={src ? src : `https://picsum.photos/${width}/${height}`}
-        onLoad={imgLoaded}
-        onError={imgError}
-      />
+      <img src={src ? src : img7} onLoad={imgLoaded} onError={imgError} />
     </div>
   );
 };

@@ -69,12 +69,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="line2">
-          <div>
-            Copyright ©2022 All rights reserved | This template is made with{" "}
-          </div>
-          <div className="owner">
-            by <Link to="/">Colorlib</Link>
-          </div>
+          <div>Copyright ©2022 All rights reserved</div>
         </div>
       </div>
     </div>

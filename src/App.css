@@ -144,16 +144,13 @@ h5 {
 .f_link {
   color: white;
   text-decoration: none;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 .f_part2 .line2 {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
-.owner {
-  align-self: flex-end;
-  }
   .verticle_line {
     width: 2px;
     border-left: solid black 2px;
@@ -190,6 +187,7 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+    overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .card_details {
@@ -220,6 +218,9 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+img {
+  object-fit:contain;
 }
 
 @media screen and (max-width: 600px) {
@@ -260,8 +261,14 @@ h5 {
   }
   .f_part2 {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center !important;
     justify-content: space-between;
+  }
+  .f_part2 .line1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .f_link {
     width: fit-content;

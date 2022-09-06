@@ -6,7 +6,7 @@ import "./Home.css";
 import Section4Item from "./Section4Item";
 import { useEffect } from "react";
 import ImgWithLoader from "../../components/ImgWithLoader";
-
+import { img10, img7, img8 } from "../../Utils/Utils";
 const imagesSection4 = [
   { width: "350", height: "600", category: "Double Room" },
   { width: "350", height: "600", category: "Double Room" },
@@ -21,12 +21,10 @@ const Home = () => {
     script.src =
       "//www.opentable.com/widget/reservation/loader?rid=108955&type=button&theme=standard&color=1&iframe=true&domain=com&lang=en-US&newtab=true&ot_source=Restaurant%20website";
     script.async = true;
-    // if (!document.getElementById("openTable").firstChild(script)) {
     document.getElementById("openTable").appendChild(script);
-    // }
 
     return () => {
-      // document.getElementById("openTable").removeChild(script);
+      document.getElementById("openTable").removeChild(script);
     };
   }, []);
 
@@ -50,48 +48,39 @@ const Home = () => {
       </div>
       <div className="openTable">
         <div id="openTable"></div>
-        <div>
-          <ImgWithLoader height="400" width="370" />
+        <div className="openTable_img">
+          <ImgWithLoader src={img8} />
         </div>
       </div>
       <div className="section2">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6 col-sm-12 about">
-              <div className="about-text">
-                <div className="section2-title">
-                  <span>About Us</span>
-                  <h1>
-                    Intercontinental LA <br />
-                    Westlake Hotel
-                  </h1>
-                </div>
-                <p className="text-center">
-                  Sona.com is a leading online accommodation site. We’re
-                  passionate about travel. Every day, we inspire and reach
-                  millions of travelers across 90 local websites in 41
-                  languages.
-                </p>
-                <p className="text-center">
-                  So when it comes to booking the perfect hotel, vacation
-                  rental, resort, apartment, guest house, or tree house, we’ve
-                  got you covered.
-                </p>
-                <button className="btn_readmore">Read More</button>
-              </div>
+        <div className="about">
+          <div className="about-text">
+            <div className="section2-title">
+              <span>About Us</span>
+              <h1>
+                Intercontinental LA <br />
+                Westlake Hotel
+              </h1>
             </div>
-            <div className="col-lg-6 col-sm-12">
-              <div className="about-pic">
-                <div className="row">
-                  <div className="col-sm-12 col-lg-6 s2_img_container mb-3">
-                    <ImgWithLoader width="260" height="372" />
-                  </div>
-                  <div className="col-sm-12 col-lg-6 s2_img_container mb-3">
-                    <ImgWithLoader width="260" height="372" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p className="text-center">
+              Sona.com is a leading online accommodation site. We’re passionate
+              about travel. Every day, we inspire and reach millions of
+              travelers across 90 local websites in 41 languages.
+            </p>
+            <p className="text-center">
+              So when it comes to booking the perfect hotel, vacation rental,
+              resort, apartment, guest house, or tree house, we’ve got you
+              covered.
+            </p>
+            <button className="btn_readmore">Read More</button>
+          </div>
+        </div>
+        <div className="s2_img_container">
+          <div className="s2_img_container_img">
+            <ImgWithLoader src={img10} />
+          </div>
+          <div className="s2_img_container_img">
+            <ImgWithLoader src={img7} />
           </div>
         </div>
         <hr />

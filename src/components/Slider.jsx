@@ -1,30 +1,24 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { img3, img4, img5 } from "../Utils/Utils";
 
 const Slider = () => {
   return (
     <>
       <Carousel fade={true} interval={2000} pause={false}>
         <Carousel.Item>
-          <img
-            className="d-block"
-            src="https://picsum.photos/1440/800?random=1"
-            alt="First slide"
-          />
+          <img height="100%" className="d-block" src={img5} alt="First slide" />
         </Carousel.Item>
         <Carousel.Item>
           <img
+            height="100%"
             className="d-block"
-            src="https://picsum.photos/1440/800?random=2"
+            src={img3}
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block"
-            src="https://picsum.photos/1440/800?random=3"
-            alt="Third slide"
-          />
+          <img height="100%" className="d-block" src={img4} alt="Third slide" />
         </Carousel.Item>
       </Carousel>
     </>

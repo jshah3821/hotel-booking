@@ -1,5 +1,6 @@
 import React from "react";
 import ImgWithLoader from "../../components/ImgWithLoader";
+import { img7 } from "../../Utils/Utils";
 import "../Home/Home.css";
 
 const Section4Item = (props) => {
@@ -7,7 +8,7 @@ const Section4Item = (props) => {
   return (
     <div className="s4_container">
       <div className="s4_img_container" id="a">
-        <ImgWithLoader height={item.height} width={item.width} />
+        <ImgWithLoader src={img7} />
       </div>
       <div className="s4_txt_container" id="b">
         <h1 style={{ color: "white" }}>Double Room</h1>
